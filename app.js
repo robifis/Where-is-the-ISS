@@ -3,7 +3,7 @@
 window.addEventListener('load', getISSData);
 
 // Setting custom zoom level and interval
-const zoomLevel = 6;
+const zoomLevel = 5;
 const interval = 3000;
 
 // Global variable to API URL
@@ -12,7 +12,7 @@ const api_url = 'https://api.wheretheiss.at/v1/satellites/25544';
 // Creating the map with various options
 const myMap = L.map('issMap', {
   zoomDelta : 0.5,
-  minZoom   : 4,
+  minZoom   : 2,
   maxZoom   : 8,
   zoomSnap  : 0.5,
 }).setView([ 0, 0 ], zoomLevel);
