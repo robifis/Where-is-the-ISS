@@ -47,7 +47,7 @@ async function getISSData () {
   document.querySelector('#lat').textContent = `${latitude.toFixed(2)}°`;
   document.querySelector('#lon').textContent = `${longitude.toFixed(2)}°`;
   document.querySelector('#vel').textContent = `${velocity.toFixed(2)} km/h`;
-  document.querySelector('#alt').textContent = `${altitude.toFixed(2)} km/h`;
+  document.querySelector('#alt').textContent = `${altitude.toFixed(2)} km`;
 }
 
 // Calling the function every so often with setInterval (set to 3 seconds!)
