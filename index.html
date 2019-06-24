@@ -4,6 +4,8 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <link href="https://fonts.googleapis.com/css?family=Muli:400,900&display=swap" rel="stylesheet">
  <script defer src="app.js"></script>
 
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
@@ -20,13 +22,27 @@
 </head>
 <body>
 
- <h1>Where is the ISS?</h1>
- <p>Latitude  = <span id="lat"></span></p>
-  <p>Longitude = <span id="lon"></span><p>
-  <p>Velocity  = <span id="vel"></span></p>
-  <p>Altitude  = <span id="alt"></span></p>
- </p>
- <div id="issMap"></div>
+  <h1 id='title'>Where is the ISS?</h1>
+ <div class="container">
 
+   <div class="info__card">
+     <div class="data__container">
+       <div class="lat">
+         <p id="current__latitude">Latitude</br><span id="lat"></span></p>
+       </div>
+       <div class="lon">
+         <p id="current__longitude">Longitude</br><span id="lon"></span><p>
+       </div>
+         <div class="vel">
+           <p id="current__velocity">Velocity</br><span id="vel"></span></p>
+         </div>
+         <div class = "alt">
+           <p id="current__altitude">Altitude</br><span id="alt"></span></p>
+         </div>
+        </div>
+      </div>
+      <div id="issMap"></div>
+    </div>
+    <p id="current__date">Current Date: <span id='date'></span></p>
 </body>
 </html>

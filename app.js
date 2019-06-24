@@ -43,7 +43,25 @@ async function getISSData () {
   marker.setLatLng([ latitude, longitude ]);
   myMap.setView([ latitude, longitude ]);
 
+  const date = new Date();
+
+  const Months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
   // Adding location and velocity to DOM
+  document.querySelector('#date').textContent = `${date.getDate()}-${Months[date.getMonth()]}-${date.getFullYear()}`;
   document.querySelector('#lat').textContent = `${latitude.toFixed(2)}°`;
   document.querySelector('#lon').textContent = `${longitude.toFixed(2)}°`;
   document.querySelector('#vel').textContent = `${velocity.toFixed(2)} km/h`;
